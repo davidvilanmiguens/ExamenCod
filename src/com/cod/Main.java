@@ -16,13 +16,13 @@ public class Main {
     }
 
     public static boolean mirar(String u) {
-        Comprobar obx1 = new Comprobar(u);
+        Comprobar obx1 =  Comprobar.getInstance();
         System.out.println("Conectando a " + obx1.ip + ", con el usuario " + u);
         return obx1.con();
     }
 
     public static boolean mirar2() {
-        Comprobar obx2 = new Comprobar();
+        Comprobar obx2 =  Comprobar.getInstance();
         System.out.println("Conectando a " + obx2.ip + ", con el usuario " + obx2.usuario);
         return obx2.con();
     }
