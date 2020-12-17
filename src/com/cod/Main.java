@@ -16,6 +16,7 @@ public class Main {
     }
 
     public static boolean mirar(String u) {
+        /** Java Doc **/
         Comprobar obx1 =  Comprobar.getInstance();
         System.out.println("Conectando a " + obx1.ip + ", con el usuario " + u);
         return obx1.con();
